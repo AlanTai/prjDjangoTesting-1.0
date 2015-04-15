@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ADMINS = ('alan_tai', 'gogistics@gogistics-tw.com')
 
 # Application definition
 
@@ -37,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'appTest'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -76,7 +79,7 @@ WSGI_APPLICATION = 'prjTest.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3', # default sqlite3
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
