@@ -10,5 +10,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     
     # appTest
-    url(r'^$', 'appTest.views.heelo_world', name='hello_world')
+    url(r'^$', 'appTest.views.hello_world', name='hello_world')
 ]
