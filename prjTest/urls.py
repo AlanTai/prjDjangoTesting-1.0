@@ -14,5 +14,5 @@ urlpatterns = [
     url(r'^$', 'appTest.views.hello_world', name='hello_world'),
     
     # appTestTwo
-    url(r'^app_two/(.*)', include('appTestTwo.urls'))
+    url(r'^app_two/', include('appTestTwo.urls'))
 ]
